@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <html lang='en'>
+        <head>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
+            <link href='index.css' rel="stylesheet"/>
+            <script src="index.js"></script>
+        </head>
+        <body>
+            <div id="main">
+                <div class="score">
+                    <h1 class="score-team">HOME</h1>
+                    <h2 class="score-num" id="score-home">0</h2>
+                    <div class="score-btn">
+                        <button id="add-1" onclick="add('score-home', 1)">+1</button>
+                        <button id="add-2" onclick="add('score-home', 2)">+2</button>
+                        <button id="add-3" onclick="add('score-home', 3)">+3</button>
+                    </div>
+                </div>
+                <div class="bonus">
+                    <div class="sm-score">
+                        <h3 class="score-team small-team">PERIOD</h3>
+                        <h2 class="score-num small-num" id="periodNum">0</h2>
+                    </div>
+                    <button class="score-btn extra-btn" onclick="period()">PERIOD</button>
+                    <button class="score-btn extra-btn" onclick="resetGame()">NEW GAME</button>
+                </div>
+                <div class="score">
+                    <h1 class="score-team">GUEST</h1>
+                    <h2 class="score-num" id="score-guest">0</h2>
+                    <div class="score-btn">
+                        <button id="add-1" onclick="add('score-guest', 1)">+1</button>
+                        <button id="add-2" onclick="add('score-guest', 2)">+2</button>
+                        <button id="add-3" onclick="add('score-guest', 3)">+3</button>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </html>
